@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+.images{
+    @apply flex-[0.5] m-[10px] relative bg-cover bg-no-repeat bg-center h-[80vh] rounded-[50px] text-white cursor-pointer transition
+    ease-in delay-[0.7s] 
+}
+.images h3{
+    @apply text-[24px] absolute bottom-0 left-0 right-0 mx-auto mb-[20px]
+    text-center opacity-0
+}
+.active{
+    @apply flex-[5] 
+}
+.images.active h3{
+  @apply opacity-[1];
+}
+@tailwind utilities;
+@layer base {
+    html {
+      font-family: 'Roboto',sans-serif;
+    }
+  }
